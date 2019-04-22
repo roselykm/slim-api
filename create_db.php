@@ -1,17 +1,18 @@
 <?php
 	echo "<br />Creating db now....";
 
+	//mysql://b2c04d13ed6b4c:40729ffe@us-cdbr-iron-east-02.cleardb.net/heroku_b87ec2784b3ca40?reconnect=true
    $dbhost="us-cdbr-iron-east-02.cleardb.net";
-   $dbuser="b955f1346bbd64";
-   $dbpass="ee5daa30";
-   $dbname="heroku_8594579a78ced01";	
+   $dbuser="b2c04d13ed6b4c";
+   $dbpass="40729ffe";
+   $dbname="heroku_b87ec2784b3ca40";	
 
    $db = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
    $db->setAttribute(PDO::MYSQL_ATTR_FOUND_ROWS, true);   
 
-   /*
+   //*
    try {
 		$sql_create_contacts_tbl = <<<EOSQL
 			CREATE TABLE IF NOT EXISTS contacts (
@@ -41,7 +42,7 @@
    }
    //*/ 
 
-   /*
+   //*
    try {
 		$sql_create_users_tbl = <<<EOSQL
 			CREATE TABLE IF NOT EXISTS users (
