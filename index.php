@@ -46,9 +46,9 @@
 
    function getDatabase() {
       $dbhost="us-cdbr-iron-east-02.cleardb.net";
-      $dbuser="b955f1346bbd64";
-      $dbpass="ee5daa30";
-      $dbname="heroku_8594579a78ced01";
+      $dbuser="b2c04d13ed6b4c";
+      $dbpass="40729ffe";
+      $dbname="heroku_b87ec2784b3ca40";
 
       $db = new Database($dbhost, $dbuser, $dbpass, $dbname);
       return $db;
